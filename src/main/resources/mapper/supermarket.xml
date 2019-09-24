@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- model中的xml文件 -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为了保证mapper中的sql指令能被java代码执行数据持久层必须有一个对应接口，就是dao层 -->
+<mapper namespace="com.stu.mybatis.dao.DbSupermarketDao">
+    <select id="selectUserAllSupermarket" resultType="map">
+        select * from dbsupermarket
+    </select>
+</mapper>
